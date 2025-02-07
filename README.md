@@ -3,7 +3,6 @@
 ### **By:** Bilal Sihadi & Mohamed Rouabhi  
 ### **Course:** CIS 260  
 ### **Professor:** MD Ali  
-### **Date:** 01-24-2025  
 
 ---
 
