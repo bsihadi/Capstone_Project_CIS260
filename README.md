@@ -143,4 +143,5 @@ pyinstaller --onefile --noconsole keylogger.py
 ---
 
 ##  **License**  
-This project is for educational purposes only and must not be used for malicious activities.  
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
