@@ -112,6 +112,21 @@ pyinstaller --onefile --noconsole keylogger.py
 
 ---
 
+## 🔐 Windows Defender Exclusion
+
+To prevent automatic deletion during testing:
+
+1. Open **Windows Security**
+2. Go to **Virus & threat protection** → **Manage settings**
+3. Scroll down to the **Exclusions** section
+4. Click **Add or remove exclusions**
+5. Add:
+   - The `.exe` file (e.g., `keylogger.exe`)
+     
+> ⚠️ This step is important because antivirus software (especially Windows Defender) will likely detect and remove your keylogger.
+
+---
+
 ##  **How to Detect & Prevent Keyloggers**  
 - **Disable AutoRun & AutoPlay** to prevent automatic execution.  
 - **Use antivirus & endpoint security tools**.  
