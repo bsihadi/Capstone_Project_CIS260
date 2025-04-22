@@ -134,7 +134,9 @@ To prevent automatic deletion during testing:
 5. Add:
    - The `.exe` file (e.g., `keylogger.exe`)
      
-> ⚠️ This step is important because antivirus software (especially Windows Defender) will likely detect and remove your keylogger.
+⚠️ This step is important because antivirus software (especially Windows Defender) will likely detect and remove your keylogger.
+
+![nnnn](https://github.com/user-attachments/assets/4c7d0f56-911c-4ecd-bd2d-106f8fa01e3c)
 
 ---
 
