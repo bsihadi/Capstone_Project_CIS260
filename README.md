@@ -112,6 +112,15 @@ pyinstaller --onefile --noconsole keylogger.py
 
 ---
 
+## 📄 Example Output
+
+The keylogger stores keystrokes with timestamps in a file named `keyfile.txt`.  
+Below is a sample snippet of the output:
+
+![ccc](https://github.com/user-attachments/assets/33b01b86-f41e-443c-ac4b-6cea9582a52c)
+
+
+---
 ## 🔐 Windows Defender Exclusion
 
 To prevent automatic deletion during testing:
