@@ -108,8 +108,10 @@ pyinstaller --onefile --noconsole keylogger.py
 
 #### **Step 3: Plug the USB Into a Windows Computer**  
 - If **AutoRun** is enabled, `keylogger.exe` will start running in the background.  
-- If not, manually open the USB and **run keylogger.exe**.  
-
+- If not, manually open the USB and **run keylogger.exe**.
+  
+  ![vv](https://github.com/user-attachments/assets/88f3a628-336b-4a40-a047-f45cd780964a)
+  
 ---
 
 ## 📄 Example Output
