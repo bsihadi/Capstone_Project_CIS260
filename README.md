@@ -127,12 +127,25 @@ To prevent automatic deletion during testing:
 
 ---
 
-##  **How to Detect & Prevent Keyloggers**  
-- **Disable AutoRun & AutoPlay** to prevent automatic execution.  
-- **Use antivirus & endpoint security tools**.  
-- **Monitor running processes** for suspicious activity.  
-- **Encrypt sensitive keystrokes** to prevent logging.  
+## 🛡️ How to Detect & Prevent Keyloggers
 
+Keyloggers can be hidden in software or hardware. Below are steps to help detect and prevent them:
+
+- **Disable AutoRun & AutoPlay**  
+  Prevents automatic execution from USB or external media.
+
+- **Use Antivirus & Endpoint Security**  
+  Scan for known keylogger signatures and behavior.
+
+- **Monitor Running Processes**  
+  Identify unusual or suspicious tasks using Task Manager or `ps`.
+
+- **Encrypt Sensitive Keystrokes**  
+  Use tools or secure input fields that protect against keylogging.
+
+- **Check for USB-Based Devices**  
+  Inspect physical USB connections. Use device control policies to block unauthorized peripherals (e.g., USBGuard, Windows Group Policy).
+  
 ---
 
 ##  **Ethical Considerations**  
