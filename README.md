@@ -152,6 +152,8 @@ Keyloggers can be hidden in software or hardware. Below are steps to help detect
 
 - **Monitor Running Processes**  
   Identify unusual or suspicious tasks using Task Manager or `ps`.
+  
+![qqq](https://github.com/user-attachments/assets/c71717f9-e089-4674-8fdd-48c79578d6c3)
 
 - **Encrypt Sensitive Keystrokes**  
   Use tools or secure input fields that protect against keylogging.
