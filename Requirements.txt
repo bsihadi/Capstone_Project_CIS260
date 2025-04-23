@@ -2,4 +2,4 @@
 
 - **Python 3.x**
 - **Linux and Windows OS**
-- Python package: `pynput`
+- Python package: `pynput, pyinstaler`
