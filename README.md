@@ -84,7 +84,8 @@ python keylogger.py
 ---
 
 ### **2️⃣ USB Keylogger Setup (Windows - Software-Based)**  
-This method turns a normal USB drive into a **portable keylogger** that starts when plugged into a Windows computer.  
+This method turns a normal USB drive into a **portable keylogger** that starts when plugged into a Windows computer.
+![vvvvvv](https://github.com/user-attachments/assets/0fa7454d-81fb-4028-8777-f23a8bf06991)
 
 #### **Step 1: Convert the Keylogger to an Executable**  
 To run without needing Python installed, convert it into an **EXE file**:  
