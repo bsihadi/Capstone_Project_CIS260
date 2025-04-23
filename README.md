@@ -128,6 +128,34 @@ Below is a sample snippet of the output:
 
 
 ---
+How to Install & Run in Linux
+
+Install the pynput library:
+
+pip3 install pynput
+
+▶️ Usage
+Create a file called keylogger.py and paste the following code:
+
+Run the script:
+
+python3 keylogger.py
+
+To run it in the background, use:
+
+nohup python3 keylogger.py &
+Check the logged keys:
+
+cat keyfile.txt
+❌ To Stop the Script
+Find the process and kill it:
+
+ps aux | grep keylogger.py
+kill <PID>
+Or use:
+
+pkill -f keylogger.py
+
 ## 🔐 Windows Defender Exclusion
 
 To prevent automatic deletion during testing:
