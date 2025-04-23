@@ -146,7 +146,6 @@ Check the logged keys:
 
 ![Screenshot 2025-04-22 234059](https://github.com/user-attachments/assets/dda7a194-838b-4dfc-b216-c878a96b2638)
 
-cat keyfile.txt
 
 ## 📄 Example Output
 
