@@ -1,5 +1,5 @@
 ## 🛠 Requirements
-
-- **Python 3.x**
-- **Linux and Windows OS**
-- Python package: `pynput, pyinstaler`
+- Python 3.x
+- Linux and Windows OS
+- Python package: `pynput, pyinstaller`
+- pyinstaller --onefile --noconsole keylogger.py
