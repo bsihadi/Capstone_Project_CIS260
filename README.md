@@ -148,11 +148,22 @@ Check the logged keys:
 ![Screenshot 2025-04-22 234059](https://github.com/user-attachments/assets/dda7a194-838b-4dfc-b216-c878a96b2638)
 
 cat keyfile.txt
+
+## 📄 Example Output
+
+The keylogger stores keystrokes with timestamps in a file named `keyfile.txt`.  
+Below is a sample snippet of the output:
+
+![Screenshot 2025-04-22 234123](https://github.com/user-attachments/assets/ea6aff5a-4733-44a3-8db0-867f5f596378)
+
+
 ❌ To Stop the Script
 Find the process and kill it:
+
 ![Screenshot 2025-04-22 234601](https://github.com/user-attachments/assets/8564df07-6b1f-469c-afa7-7ff5475bed1a)
 
 ps aux | grep keylogger.py
+
 kill <PID>
 
 ## 🔐 Windows Defender Exclusion
