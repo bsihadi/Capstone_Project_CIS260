@@ -133,6 +133,7 @@ How to Install & Run in Linux
 Install the pynput library:
 
 pip3 install pynput
+
 ![Screenshot 2025-04-22 233931](https://github.com/user-attachments/assets/f2528722-3e0c-4c6a-a4fc-b5bb01eed2e8)
 
 
@@ -144,7 +145,9 @@ python3 keylogger.py
 To run it in the background, use:
 
 nohup python3 keylogger.py &
+
 Check the logged keys:
+
 ![Screenshot 2025-04-22 234059](https://github.com/user-attachments/assets/dda7a194-838b-4dfc-b216-c878a96b2638)
 
 cat keyfile.txt
