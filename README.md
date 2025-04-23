@@ -127,8 +127,7 @@ Below is a sample snippet of the output:
 ![ccc](https://github.com/user-attachments/assets/33b01b86-f41e-443c-ac4b-6cea9582a52c)
 
 
----
-How to Install & Run in Linux
+##  **How to Install & Run in Linux** 
 
 Install the pynput library:
 
@@ -158,11 +157,8 @@ Below is a sample snippet of the output:
 ❌ To Stop the Script
 Find the process and kill it:
 
-![Screenshot 2025-04-22 234601](https://github.com/user-attachments/assets/8564df07-6b1f-469c-afa7-7ff5475bed1a)
+![Screenshot 2025-04-22 234644](https://github.com/user-attachments/assets/9b3ee8c5-2722-4b33-891c-5c0563ea4016)
 
-ps aux | grep keylogger.py
-
-kill <PID>
 
 ## 🔐 Windows Defender Exclusion
 
