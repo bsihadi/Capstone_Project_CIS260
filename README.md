@@ -36,7 +36,7 @@ This project is about developing a **keylogger** for **educational and ethical u
 
 ---
 
-##  **How to Install & Run**  
+##  **How to Install & Run in Windows**  
 
 ### **1️⃣ Software Keylogger (Python)**  
 #### **Requirements:**  
