@@ -139,12 +139,8 @@ pip3 install pynput
 
 ▶️ Usage: Run the script:
 
-python3 keylogger.py
 ![Screenshot 2025-04-22 234016](https://github.com/user-attachments/assets/2f20b49e-6cef-4492-afab-cb1ed87a3cb4)
 
-To run it in the background, use:
-
-nohup python3 keylogger.py &
 
 Check the logged keys:
 
