@@ -133,28 +133,27 @@ How to Install & Run in Linux
 Install the pynput library:
 
 pip3 install pynput
+![Screenshot 2025-04-22 233931](https://github.com/user-attachments/assets/f2528722-3e0c-4c6a-a4fc-b5bb01eed2e8)
 
-▶️ Usage
-Create a file called keylogger.py and paste the following code:
 
-Run the script:
+▶️ Usage: Run the script:
 
 python3 keylogger.py
+![Screenshot 2025-04-22 234016](https://github.com/user-attachments/assets/2f20b49e-6cef-4492-afab-cb1ed87a3cb4)
 
 To run it in the background, use:
 
 nohup python3 keylogger.py &
 Check the logged keys:
+![Screenshot 2025-04-22 234059](https://github.com/user-attachments/assets/dda7a194-838b-4dfc-b216-c878a96b2638)
 
 cat keyfile.txt
 ❌ To Stop the Script
 Find the process and kill it:
+![Screenshot 2025-04-22 234601](https://github.com/user-attachments/assets/8564df07-6b1f-469c-afa7-7ff5475bed1a)
 
 ps aux | grep keylogger.py
 kill <PID>
-Or use:
-
-pkill -f keylogger.py
 
 ## 🔐 Windows Defender Exclusion
 
