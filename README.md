@@ -43,6 +43,8 @@ This project is about developing a **keylogger** for **educational and ethical u
 - Python 3.13  
 - Required library: `pynput`  
 
+![xxx](https://github.com/user-attachments/assets/c1e00f6a-a929-4c17-bd29-517bd8da9bad)
+
 #### **Installation:**  
 ```sh
 pip install pynput
@@ -90,6 +92,8 @@ To run without needing Python installed, convert it into an **EXE file**:
 pip install pyinstaller
 pyinstaller --onefile --noconsole keylogger.py
 ```
+![zzz](https://github.com/user-attachments/assets/1281becb-9dc9-412a-9440-69025ffa8628)
+
 - This will create an EXE file in the `dist/` folder.  
 - Move `dist/keylogger.exe` to the USB drive.  
 
